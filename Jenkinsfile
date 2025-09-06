@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/zia-kayani/test-CI-CD.git'
+               git branch: 'main', url: 'https://github.com/zia-kayani/test-CI-CD.git'
             }
         }
         stage('Build') {
